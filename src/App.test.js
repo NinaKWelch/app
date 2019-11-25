@@ -16,5 +16,5 @@ import App from './App'
 
 it('renders without crashing', () => {
   const { getByText } = render(<App />)
-  expect(getByText('App')).toBeInTheDocument()
+  expect(getByText('Nina')).toBeInTheDocument()
 })
