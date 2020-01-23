@@ -1,6 +1,14 @@
 import React from 'react'
+import { Link as RouterLink } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles'
-import { AppBar, Toolbar, Typography, IconButton } from '@material-ui/core'
+import {
+  AppBar,
+  Toolbar,
+  Link,
+  Box,
+  Tooltip,
+  IconButton
+} from '@material-ui/core'
 import {
   LinkedIn as LinkedInIcon,
   GitHub as GitHubIcon
@@ -8,13 +16,18 @@ import {
 
 const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1
+    display: 'flex',
+    wrap: 'no-wrap',
+    justifyContent: 'space-between'
   },
-  title: {
-    flexGrow: 1
+  brand: {
+    '&:hover': {
+      textDecoration: 'none',
+      color: theme.palette.primary.dark
+    }
   },
   social: {
-    marginRight: theme.spacing(2),
+    marginLeft: theme.spacing(2),
     border: '1px solid',
     borderColor: theme.palette.grey[300]
   },
@@ -25,37 +38,49 @@ const Header = () => {
   const classes = useStyles()
 
   return (
-    <div className={classes.root}>
+    <>
       <AppBar color="default">
-        <Toolbar>
-          <Typography
-            variant="h5"
-            component="h1"
-            className={classes.title}
-            color="primary"
-          >
-            Nina Welch
-          </Typography>
-          <div>
-            <IconButton
-              aria-label="github"
-              className={classes.social}
-              color="secondary"
+        <Toolbar className={classes.root}>
+          <Link component={RouterLink} to="/" className={classes.brand}>
+            <Box
+              component="h1"
+              fontFamily="Montserrat"
+              fontWeight={700}
+              fontSize={22}
             >
-              <GitHubIcon className={classes.icon} />
-            </IconButton>
-            <IconButton
-              aria-label="linkedin"
-              className={classes.social}
-              color="primary"
-            >
-              <LinkedInIcon />
-            </IconButton>
-          </div>
+              Nina Welch
+            </Box>
+          </Link>
+          <Box>
+            <Tooltip title="GitHub">
+              <IconButton
+                component="a"
+                href="https://github.com/NinaKWelch/"
+                target="_blank"
+                aria-label="github"
+                className={classes.social}
+                color="secondary"
+              >
+                <GitHubIcon className={classes.icon} />
+              </IconButton>
+            </Tooltip>
+            <Tooltip title="LinkedIn">
+              <IconButton
+                component="a"
+                href="https://www.linkedin.com/in/nina-welch-50843137/"
+                target="_blank"
+                aria-label="linkedin"
+                className={classes.social}
+                color="primary"
+              >
+                <LinkedInIcon />
+              </IconButton>
+            </Tooltip>
+          </Box>
         </Toolbar>
       </AppBar>
       <div className={classes.offset} />
-    </div>
+    </>
   )
 }
 

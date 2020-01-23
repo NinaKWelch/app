@@ -1,8 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 import { Grid } from '@material-ui/core'
 import PortfolioItem from './PortfolioItem'
-import projects from '../services/projects'
 
 const useStyles = makeStyles(theme => ({
   title: {
@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const Portfolio = () => {
+const Portfolio = ({ projects }) => {
   const classes = useStyles()
 
   return (
@@ -24,6 +24,10 @@ const Portfolio = () => {
       ))}
     </Grid>
   )
+}
+
+Portfolio.propTypes = {
+  projects: PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
 export default Portfolio

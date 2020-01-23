@@ -8,11 +8,18 @@ const theme = createMuiTheme({
     },
     secondary: {
       main: '#725b53',
-      ontrastText: '#fff'
+      contrastText: '#fff'
     }
   },
+  typography: {
+    fontFamily: '"Raleway", "Arial", sans-serif'
+  },
   overrides: {
-    // add overrides
+    MuiCardActionArea: {
+      focusHighlight: {
+        backgroundColor: 'none'
+      }
+    }
   }
 })
 

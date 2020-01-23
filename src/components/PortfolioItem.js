@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Link as RouterLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 import {
@@ -9,15 +10,17 @@ import {
   CardActions,
   CardContent,
   Typography,
+  Tooltip,
   IconButton
 } from '@material-ui/core'
-import GitHubIcon from '@material-ui/icons/GitHub'
-import PublicIcon from '@material-ui/icons/Public'
+import { GitHub as GitHubIcon, Public as PublicIcon } from '@material-ui/icons'
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    border: '1px solid',
-    borderColor: theme.palette.grey[200]
+  container: {
+    boxShadow: theme.shadows[0],
+    '&:hover': {
+      boxShadow: theme.shadows[5]
+    }
   },
   content: {
     borderTop: '1px solid',
@@ -39,10 +42,14 @@ const useStyles = makeStyles(theme => ({
 const PortfolioItem = ({ project }) => {
   const classes = useStyles()
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <Grid item xs={12} sm={6} md={4}>
-      <Card className={classes.root}>
-        <CardActionArea>
+      <Card className={classes.container}>
+        <CardActionArea component={RouterLink} to={`/projects/${project.id}`}>
           <CardMedia
             component="img"
             image={project.image}
@@ -66,25 +73,35 @@ const PortfolioItem = ({ project }) => {
           {project.repo === '' ? (
             ''
           ) : (
-            <IconButton
-              component="a"
-              href={project.repo}
-              color="secondary"
-              className={classes.button}
-              aria-label="github repository"
-            >
-              <GitHubIcon />
-            </IconButton>
+            <Tooltip title="GitHub Repo" placement="top">
+              <IconButton
+                component="a"
+                href={project.repo}
+                target="_blank"
+                color="secondary"
+                className={classes.button}
+                aria-label="github repository"
+              >
+                <GitHubIcon />
+              </IconButton>
+            </Tooltip>
           )}
-          <IconButton
-            component="a"
-            href={project.demo}
-            color="primary"
-            className={classes.button}
-            aria-label="project website"
-          >
-            <PublicIcon />
-          </IconButton>
+          {project.demo === '' ? (
+            ''
+          ) : (
+            <Tooltip title="Website" placement="top">
+              <IconButton
+                component="a"
+                href={project.demo}
+                target="_blank"
+                color="primary"
+                className={classes.button}
+                aria-label="project website"
+              >
+                <PublicIcon />
+              </IconButton>
+            </Tooltip>
+          )}
         </CardActions>
       </Card>
     </Grid>
@@ -93,13 +110,15 @@ const PortfolioItem = ({ project }) => {
 
 PortfolioItem.propTypes = {
   project: PropTypes.shape({
-    id: PropTypes.number,
+    id: PropTypes.string,
     image: PropTypes.string,
     imagetitle: PropTypes.string,
     title: PropTypes.string,
     description: PropTypes.string,
     demo: PropTypes.string,
-    repo: PropTypes.string
+    repo: PropTypes.string,
+    skills: PropTypes.object,
+    info: PropTypes.array
   }).isRequired
 }
 
