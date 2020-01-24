@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link as RouterLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
@@ -41,10 +41,8 @@ const useStyles = makeStyles(theme => ({
 
 const PortfolioItem = ({ project }) => {
   const classes = useStyles()
-
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  const imageUrl =
+    window.devicePixelRatio === 1 ? project.thumbnail : project.image
 
   return (
     <Grid item xs={12} sm={6} md={4}>
@@ -52,7 +50,7 @@ const PortfolioItem = ({ project }) => {
         <CardActionArea component={RouterLink} to={`/projects/${project.id}`}>
           <CardMedia
             component="img"
-            image={project.image}
+            image={imageUrl}
             title={project.imagetitle}
           />
           <CardContent className={classes.content}>
@@ -78,6 +76,7 @@ const PortfolioItem = ({ project }) => {
                 component="a"
                 href={project.repo}
                 target="_blank"
+                rel="noopener"
                 color="secondary"
                 className={classes.button}
                 aria-label="github repository"
@@ -94,6 +93,7 @@ const PortfolioItem = ({ project }) => {
                 component="a"
                 href={project.demo}
                 target="_blank"
+                rel="noopener"
                 color="primary"
                 className={classes.button}
                 aria-label="project website"
@@ -112,6 +112,7 @@ PortfolioItem.propTypes = {
   project: PropTypes.shape({
     id: PropTypes.string,
     image: PropTypes.string,
+    thumbnail: PropTypes.string,
     imagetitle: PropTypes.string,
     title: PropTypes.string,
     description: PropTypes.string,

@@ -1,12 +1,21 @@
 import img1 from '../media/restaurant-app.png'
+import img1sm from '../media/restaurant-app_sm.png'
 import img2 from '../media/neighborhood-map.png'
+import img2sm from '../media/neighborhood-map_sm.png'
 import img3 from '../media/pixel-art-maker.png'
+import img3sm from '../media/pixel-art-maker_sm.png'
 import img4 from '../media/memory-game.png'
+import img4sm from '../media/memory-game_sm.png'
 import img5 from '../media/animal-trading-cards.png'
+import img5sm from '../media/animal-trading-cards_sm.png'
 import img6 from '../media/my-reads-app.png'
+import img6sm from '../media/my-reads-app_sm.png'
 import img7 from '../media/bloglist.png'
+import img7sm from '../media/bloglist_sm.png'
 import img8 from '../media/healthcare-website.png'
+import img8sm from '../media/healthcare-website_sm.png'
 import img9 from '../media/artist-website.png'
+import img9sm from '../media/artist-website_sm.png'
 
 /** ALL SKILLS
 skills: {
@@ -34,6 +43,7 @@ const projects = [
   {
     id: '1',
     image: img7,
+    thumbnail: img7sm,
     imagetitle: 'Bloglist preview',
     title: 'Blogs App',
     description: 'Share your favorite blogs',
@@ -64,6 +74,7 @@ const projects = [
   {
     id: '2',
     image: img1,
+    thumbnail: img1sm,
     imagetitle: 'Restaurant app preview',
     title: 'Restaurant App',
     description: 'Search by location and cuisine',
@@ -98,6 +109,7 @@ const projects = [
   {
     id: '3',
     image: img8,
+    thumbnail: img8sm,
     imagetitle: 'Yunji healthcare preview',
     title: 'Healthcare Website',
     description: 'Chinese medicine clinic',
@@ -120,6 +132,7 @@ const projects = [
   {
     id: '4',
     image: img6,
+    thumbnail: img6sm,
     imagetitle: 'My reads app preview',
     title: 'My Reads App',
     description: 'Seach and select books',
@@ -154,6 +167,7 @@ const projects = [
   {
     id: '5',
     image: img2,
+    thumbnail: img2sm,
     imagetitle: 'Neighborhood map preview',
     title: 'Neighborhood Map',
     description: 'Search for things to do',
@@ -188,6 +202,7 @@ const projects = [
   {
     id: '6',
     image: img5,
+    thumbnail: img5sm,
     imagetitle: 'Animal trading cards preview',
     title: 'Animal Trading Cards',
     description: 'Collaborative design project',
@@ -220,6 +235,7 @@ const projects = [
   {
     id: '7',
     image: img4,
+    thumbnail: img4sm,
     imagetitle: 'Memory game preview',
     title: 'Memory Game',
     description: 'Football themed game',
@@ -239,6 +255,7 @@ const projects = [
   {
     id: '8',
     image: img3,
+    thumbnail: img3sm,
     imagetitle: 'Pixel art maker preview',
     title: 'Pixel Art Maker',
     description: 'Drawing with color picker',
@@ -257,6 +274,7 @@ const projects = [
   {
     id: '9',
     image: img9,
+    thumbnail: img9sm,
     imagetitle: 'Artist website preview',
     title: 'Artist Website',
     description: 'Visual artist portfolio',

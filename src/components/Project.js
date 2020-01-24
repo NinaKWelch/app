@@ -84,6 +84,7 @@ const Project = ({ project }) => {
                 component="a"
                 href={project.demo}
                 target="_blank"
+                rel="noopener"
                 size="large"
                 color="primary"
                 startIcon={<PublicIcon />}
@@ -101,6 +102,7 @@ const Project = ({ project }) => {
                 component="a"
                 href={project.repo}
                 target="_blank"
+                rel="noopener"
                 size="large"
                 color="secondary"
                 startIcon={<GitHubIcon />}

@@ -58,6 +58,7 @@ const Header = () => {
                 component="a"
                 href="https://github.com/NinaKWelch/"
                 target="_blank"
+                rel="noopener"
                 aria-label="github"
                 className={classes.social}
                 color="secondary"
@@ -70,6 +71,7 @@ const Header = () => {
                 component="a"
                 href="https://www.linkedin.com/in/nina-welch-50843137/"
                 target="_blank"
+                rel="noopener"
                 aria-label="linkedin"
                 className={classes.social}
                 color="primary"

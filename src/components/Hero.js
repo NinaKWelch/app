@@ -2,6 +2,10 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Container, Box } from '@material-ui/core'
 import umbrellas from '../media/umbrellas.jpg'
+import smUmbrellas from '../media/umbrellas_sm.jpg'
+
+const imageUrl =
+  window.innerWidth >= 500 ? `url(${umbrellas})` : `url(${smUmbrellas})`
 
 const useStyles = makeStyles(theme => ({
   hero: {
@@ -10,7 +14,7 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.common.white,
     paddingTop: theme.spacing(5),
     paddingBottom: theme.spacing(5),
-    backgroundImage: `url(${umbrellas})`,
+    backgroundImage: imageUrl,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',

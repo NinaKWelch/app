@@ -6,6 +6,7 @@ import {
   LinkedIn as LinkedInIcon
 } from '@material-ui/icons'
 import image from '../media/nina_welch.jpg'
+import smImage from '../media/nina_welch_sm.jpg'
 
 const useStyles = makeStyles(theme => ({
   button: {
@@ -31,6 +32,8 @@ const useStyles = makeStyles(theme => ({
 const About = () => {
   const classes = useStyles()
 
+  const imageUrl = window.devicePixelRatio === 1 ? smImage : image
+
   return (
     <Grid container spacing={5} alignItems="center">
       <Grid item sm={6} md={5}>
@@ -41,7 +44,7 @@ const About = () => {
           maxWidth="100%"
           clone
         >
-          <img src={image} alt="Nina Welch" />
+          <img src={imageUrl} alt="Nina Welch" />
         </Box>
       </Grid>
       <Grid item sm={6} md={7}>
@@ -84,6 +87,7 @@ const About = () => {
               variant="extended"
               href="https://www.linkedin.com/in/nina-welch-50843137/"
               target="_blank"
+              rel="noopener"
               className={classes.social}
               aria-label="linkedin"
             >
