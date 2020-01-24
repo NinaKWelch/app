@@ -10,7 +10,7 @@ const Badges = () => {
     <Box bgcolor="white" color="text.hint" py={4}>
       <Grid
         container
-        spacing={4}
+        spacing={2}
         justify="center"
         style={{ textAlign: 'center' }}
       >

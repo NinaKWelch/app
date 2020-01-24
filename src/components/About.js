@@ -10,7 +10,8 @@ import smImage from '../media/nina_welch_sm.jpg'
 
 const useStyles = makeStyles(theme => ({
   button: {
-    marginRight: 6,
+    marginRight: 7,
+    marginBottom: 14,
     backgroundColor: theme.palette.primary.dark,
     color: 'white',
     '&:hover': {
