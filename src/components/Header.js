@@ -21,9 +21,10 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'space-between'
   },
   brand: {
+    color: theme.palette.primary.dark,
     '&:hover': {
       textDecoration: 'none',
-      color: theme.palette.primary.dark
+      color: theme.palette.primary.main
     }
   },
   social: {

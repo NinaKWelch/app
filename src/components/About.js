@@ -1,15 +1,26 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Grid, Box, Fab, Typography } from '@material-ui/core'
-import { MailOutline as MailOutlineIcon } from '@material-ui/icons'
+import {
+  MailOutline as MailOutlineIcon,
+  LinkedIn as LinkedInIcon
+} from '@material-ui/icons'
 import image from '../media/nina_welch.jpg'
 
 const useStyles = makeStyles(theme => ({
   button: {
+    marginRight: 6,
     backgroundColor: theme.palette.primary.dark,
     color: 'white',
     '&:hover': {
       backgroundColor: theme.palette.primary.main
+    }
+  },
+  social: {
+    backgroundColor: '#e36946',
+    color: 'white',
+    '&:hover': {
+      backgroundColor: '#fa965b'
     }
   },
   icon: {
@@ -47,9 +58,13 @@ const About = () => {
           </Typography>
 
           <Typography variant="body1">
-            Having just completed a challenging but rewarding course in full
-            stack development (including database integration with GraphQL), I
-            have gained a better understanding of the development process.
+            Having{' '}
+            <a href="https://studies.cs.helsinki.fi/fullstackopen2019/certificate/en/92f5086d4c25beba5e60a20397fa0b44">
+              successfully completed
+            </a>{' '}
+            a challenging but rewarding course in full stack development
+            (including database integration with GraphQL), I have gained a
+            better understanding of the development process.
           </Typography>
         </Box>
         <Grid container justify="center">
@@ -58,9 +73,22 @@ const About = () => {
               variant="extended"
               href="mailto:ninakwelch@gmail.com"
               className={classes.button}
+              aria-label="email"
             >
               <MailOutlineIcon className={classes.icon} />
               Request CV
+            </Fab>
+          </Grid>
+          <Grid item>
+            <Fab
+              variant="extended"
+              href="https://www.linkedin.com/in/nina-welch-50843137/"
+              target="_blank"
+              className={classes.social}
+              aria-label="linkedin"
+            >
+              <LinkedInIcon className={classes.icon} />
+              Connect
             </Fab>
           </Grid>
         </Grid>
