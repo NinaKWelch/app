@@ -52,7 +52,12 @@ const Project = ({ project }) => {
               <Hidden mdUp>
                 <Grid item>
                   <Box maxWidth="100%" clone>
-                    <img src={imageUrl} alt={project.imagetitle} />
+                    <img
+                      rel="preload"
+                      src={imageUrl}
+                      alt={project.imagetitle}
+                      as="image"
+                    />
                   </Box>
                 </Grid>
               </Hidden>
@@ -73,12 +78,7 @@ const Project = ({ project }) => {
           <Hidden smDown>
             <Grid item md={6}>
               <Box maxWidth="100%" clone>
-                <img
-                  rel="preload"
-                  as="image"
-                  src={project.image}
-                  alt={project.imagetitle}
-                />
+                <img src={project.image} alt={project.imagetitle} />
               </Box>
             </Grid>
           </Hidden>
