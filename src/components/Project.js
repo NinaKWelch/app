@@ -78,12 +78,17 @@ const Project = ({ project }) => {
           <Hidden smDown>
             <Grid item md={6}>
               <Box maxWidth="100%" clone>
-                <img src={project.image} alt={project.imagetitle} />
+                <img
+                  rel="preload"
+                  src={imageUrl}
+                  alt={project.imagetitle}
+                  as="image"
+                />
               </Box>
             </Grid>
           </Hidden>
         </Grid>
-        <Grid container spacing={4} justify="flex-end">
+        <Grid container spacing={2} justify="flex-end">
           {project.demo === '' ? (
             ''
           ) : (
