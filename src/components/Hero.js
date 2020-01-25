@@ -1,11 +1,16 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Container, Box } from '@material-ui/core'
-import umbrellas from '../media/umbrellas.jpg'
-import smUmbrellas from '../media/umbrellas_sm.jpg'
+// import umbrellas from '../media/umbrellas.jpg'
+// import smUmbrellas from '../media/umbrellas_sm.jpg'
+
+// const imageUrl =
+// window.innerWidth >= 500 ? `url(${umbrellas})` : `url(${smUmbrellas})`
 
 const imageUrl =
-  window.innerWidth >= 500 ? `url(${umbrellas})` : `url(${smUmbrellas})`
+  window.innerWidth >= 500
+    ? `url(https://res.cloudinary.com/ninaw/image/upload/v1579953968/umbrellas_utwskr.jpg)`
+    : `url(https://res.cloudinary.com/ninaw/image/upload/c_scale,w_1000/v1579953968/umbrellas_utwskr.jpg)`
 
 const useStyles = makeStyles(theme => ({
   hero: {

@@ -70,7 +70,12 @@ const Project = ({ project }) => {
           <Hidden smDown>
             <Grid item md={6}>
               <Box maxWidth="100%" clone>
-                <img src={project.image} alt={project.imagetitle} />
+                <img
+                  rel="preload"
+                  as="image"
+                  src={project.image}
+                  alt={project.imagetitle}
+                />
               </Box>
             </Grid>
           </Hidden>
