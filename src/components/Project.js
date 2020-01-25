@@ -27,6 +27,9 @@ const useStyles = makeStyles(theme => ({
 const Project = ({ project }) => {
   const classes = useStyles()
 
+  const imageUrl =
+    window.devicePixelRatio === 1 ? project.thumbnail : project.image
+
   const getSkills = skills => {
     const categories = Object.keys(skills)
 
@@ -49,7 +52,7 @@ const Project = ({ project }) => {
               <Hidden mdUp>
                 <Grid item>
                   <Box maxWidth="100%" clone>
-                    <img src={project.image} alt={project.imagetitle} />
+                    <img src={imageUrl} alt={project.imagetitle} />
                   </Box>
                 </Grid>
               </Hidden>
@@ -127,6 +130,7 @@ Project.propTypes = {
   project: PropTypes.shape({
     id: PropTypes.string,
     image: PropTypes.string,
+    thumbnail: PropTypes.string,
     imagetitle: PropTypes.string,
     title: PropTypes.string,
     description: PropTypes.string,
