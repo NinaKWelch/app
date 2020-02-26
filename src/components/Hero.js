@@ -1,11 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Container, Box } from '@material-ui/core'
-// import umbrellas from '../media/umbrellas.jpg'
-// import smUmbrellas from '../media/umbrellas_sm.jpg'
-
-// const imageUrl =
-// window.innerWidth >= 500 ? `url(${umbrellas})` : `url(${smUmbrellas})`
 
 const imageUrl =
   window.innerWidth >= 500
