@@ -62,13 +62,10 @@ const About = () => {
           </Typography>
 
           <Typography variant="body1">
-            Having{' '}
-            <a href="https://studies.cs.helsinki.fi/fullstackopen2019/certificate/en/92f5086d4c25beba5e60a20397fa0b44">
-              successfully completed
-            </a>{' '}
-            a challenging but rewarding course in full stack development
-            (including database integration with GraphQL), I have gained a
-            better understanding of the development process.
+            Having successfully completed a challenging but rewarding course in
+            full stack development (including database integration with
+            GraphQL), I have gained a better understanding of the development
+            process.
           </Typography>
         </Box>
         <Grid container justify="center">
