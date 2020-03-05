@@ -55,18 +55,28 @@ const projects = [
       frameworks: ['React'],
       libraries: ['Redux'],
       markup: ['Material UI'],
-      validators: [],
+      validators: ['PropTypes'],
       tools: ['Webpack', 'Babel', 'Git', 'ESLint'],
       testing: ['Jest', 'Cypress'],
       other: ['REST API', 'MongoDB', 'Express']
     },
     info: [
-      { id: '1', content: 'Full stack project' },
-      { id: '2', content: 'Built with MongoDB database, Mongoose and Express' },
-      { id: '3', content: 'REST API with asynchronous requests' },
-      { id: '4', content: 'Responsive and accessible design' },
       {
-        id: '5',
+        id: '1',
+        content:
+          'Full stack project built with React library and MongoDB database on Heroku server'
+      },
+      {
+        id: '2',
+        content: 'Mobile-first responsive design using Material UI Framework'
+      },
+      { id: '3', content: 'State management using Redux library' },
+      { id: '4', content: 'User authentication and authorization' },
+      { id: '5', content: 'Unit testing with Jest framework' },
+      { id: '6', content: 'End-to-end testing with Cypress framework' },
+      { id: '7', content: 'Bespoke Webpack configuration' },
+      {
+        id: '8',
         content: 'Sign in to live app - username: user, password: userpw'
       }
     ]
@@ -95,15 +105,18 @@ const projects = [
       ]
     },
     info: [
-      { id: '1', content: 'Bespoke mobile-ready layout' },
-      { id: '2', content: 'Accessible for screen readers' },
+      {
+        id: '1',
+        content: 'Refactring a static webpage to a mobile-ready web application'
+      },
+      { id: '2', content: 'Integration with third-party API' },
       {
         id: '3',
         content: 'Images are cached and optimised for different screen sizes'
       },
       { id: '4', content: 'All markup checked and validated' },
-      { id: '5', content: 'Follows Progressive Web App guidelines' },
-      { id: '6', content: 'Third-party API integration' }
+      { id: '5', content: 'Follows Accessibility guidelines' },
+      { id: '6', content: 'Follows Progressive Web App guidelines' }
     ]
   },
   {
@@ -122,11 +135,10 @@ const projects = [
       other: ['SEO', 'Copywriting', 'Google Analytics']
     },
     info: [
-      { id: '1', content: 'Fully functional business website with analytics' },
-      { id: '2', content: 'Search engine optimised content and links' },
-      { id: '3', content: 'Wordpress integration for easy editing' },
-      { id: '4', content: 'Bespoke branding and styling' },
-      { id: '5', content: 'Responsive and accessible design' }
+      { id: '1', content: 'Mobile-first responsive design' },
+      { id: '2', content: 'Search engine optimised content' },
+      { id: '2', content: 'Wordpress integration for easy editing' },
+      { id: '3', content: 'Embedded Google Analytics' }
     ]
   },
   {
@@ -148,11 +160,13 @@ const projects = [
       api: ['Google Books API']
     },
     info: [
-      { id: '1', content: 'Search and sort functionality' },
-      { id: '2', content: 'Follows Progressive Web App guidelines' },
-      { id: '3', content: 'Third-party API integration' },
+      { id: '1', content: 'Built with React JavaScript library' },
+      { id: '2', content: 'Integration with third-party API' },
+      { id: '3', content: 'Search and sort functionality' },
+      { id: '4', content: 'Follows Accessibility guidelines' },
+      { id: '5', content: 'Follows Progressive Web App guidelines' },
       {
-        id: '4',
+        id: '6',
         content: `Current search terms are limited. Try  'Android', 'Artificial Intelligence', 'Business', 'Classics', 'Comics', 'Design', 'Development', Education', 'Finance', 'Travel', 'Web Development' or 'iOS'`
       }
     ]
@@ -167,10 +181,11 @@ const projects = [
     demo: 'https://ninakwelch.github.io/ninas-neighborhood-map/',
     repo: 'https://github.com/NinaKWelch/ninas-neighborhood-map',
     skills: {
-      languages: ['HTML5', 'CSS3', 'JavaScript ES6', 'PropTypes'],
+      languages: ['HTML5', 'CSS3', 'JavaScript ES6'],
       frameworks: ['React'],
       application: ['Progressive Web App'],
       markup: ['Responsive', 'Accessible', 'Flexbox'],
+      validators: ['PropTypes'],
       tools: ['ESlint', 'Prettier', 'Git', 'Service Worker'],
       api: ['Foursquare API', 'Google Maps API'],
       testing: ['Jest']
@@ -178,11 +193,18 @@ const projects = [
     info: [
       {
         id: '1',
-        content: 'Location based listings'
+        content: 'Mobile-first responsive design'
       },
-      { id: '2', content: 'Synchronised content from two third-party APIs' },
-      { id: '3', content: 'Follows Progressive Web App guidelines' },
-      { id: '4', content: 'Accessible for screen readers' }
+      {
+        id: '2',
+        content: 'Built with React JavaScript library'
+      },
+      { id: '3', content: 'Integration with two third-party APIs' },
+      { id: '4', content: 'Data requests are retrieved asynchronously' },
+      { id: '5', content: 'Failed data requests are handled gracefully' },
+      { id: '6', content: 'Unit testing with Jest framework' },
+      { id: '7', content: 'Follows Accessibility guidelines' },
+      { id: '8', content: 'Follows Progressive Web App guidelines' }
     ]
   },
   {
@@ -199,23 +221,18 @@ const projects = [
       application: ['Progressive Web App'],
       libraries: ['jQuery'],
       markup: ['Bootstrap'],
+      tools: ['Git', 'Service Worker'],
       validators: ['Markup Validator', 'CSS Validator']
     },
     info: [
       {
         id: '1',
-        content: 'Creation and management of collaborative project'
+        content:
+          'Creation and management of collaborative project with over 60 contributors'
       },
-      { id: '2', content: 'Over 60 contributors' },
-      {
-        id: '3',
-        content: 'Ability to view ones own design across all cards'
-      },
-      {
-        id: '4',
-        content: 'Connecting participants to each other in a playful way'
-      },
-      { id: '5', content: 'Code follows Progressive Web App guidelines' }
+      { id: '2', content: 'Responsive design using Bootstrap CSS Framework' },
+      { id: '3', content: 'DOM events are handled using jQuery methods' },
+      { id: '4', content: 'Follows Progressive Web App guidelines' }
     ]
   },
   {
@@ -230,12 +247,13 @@ const projects = [
     skills: {
       languages: ['HTML5', 'CSS3', 'JavaScript'],
       markup: ['Flexbox'],
+      tools: ['Git'],
       validators: ['Markup Validator', 'CSS Validator', 'Autoprefixer']
     },
     info: [
-      { id: '1', content: 'Game-centric design and branding' },
+      { id: '1', content: 'Responsive design' },
       { id: '2', content: 'CSS animations with @keyframes' },
-      { id: '3', content: 'Built with vanilla javaScript' }
+      { id: '3', content: 'DOM manipulation with vanilla javaScript' }
     ]
   },
   {
@@ -244,17 +262,18 @@ const projects = [
     thumbnail: img3sm,
     imagetitle: 'Pixel art maker preview',
     title: 'Pixel Art Maker',
-    description: 'Drawing with color picker',
+    description: 'Interactive drawing application',
     demo: 'https://ninakwelch.github.io/ninas-pixel-art-maker/',
     repo: 'https://github.com/NinaKWelch/ninas-pixel-art-maker',
     skills: {
       languages: ['HTML5', 'CSS3'],
       libraries: ['jQuery'],
+      tools: ['Git'],
       validators: ['Markup Validator', 'CSS Validator']
     },
     info: [
-      { id: '1', content: 'Simple drawing canvas' },
-      { id: '2', content: 'Color picker enabled selection' }
+      { id: '1', content: 'Responsive design' },
+      { id: '2', content: 'DOM events are handled using jQuery methods' }
     ]
   },
   {
@@ -273,9 +292,9 @@ const projects = [
       other: ['Google Analytics']
     },
     info: [
-      { id: '1', content: 'Fully functional portfolio website with analytics' },
+      { id: '1', content: 'Mobile-first responsive design' },
       { id: '2', content: 'Wordpress integration for easy editing' },
-      { id: '3', content: 'Responsive and accessible design' }
+      { id: '3', content: 'Embedded Google Analytics' }
     ]
   }
 ]
