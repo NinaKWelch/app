@@ -58,7 +58,7 @@ const projects = [
       validators: ['PropTypes'],
       tools: ['Webpack', 'Babel', 'Git', 'ESLint'],
       testing: ['Jest', 'Cypress'],
-      other: ['REST API', 'MongoDB', 'Express']
+      other: ['REST API', 'MongoDB', 'Express', 'Node.JS', 'npm']
     },
     info: [
       {
@@ -102,7 +102,8 @@ const projects = [
         'Autoprefixer',
         'HTML Beautifier',
         'JavaScript Beautifier'
-      ]
+      ],
+      other: ['Node.JS', 'npm']
     },
     info: [
       {
@@ -137,8 +138,8 @@ const projects = [
     info: [
       { id: '1', content: 'Mobile-first responsive design' },
       { id: '2', content: 'Search engine optimised content' },
-      { id: '2', content: 'Wordpress integration for easy editing' },
-      { id: '3', content: 'Embedded Google Analytics' }
+      { id: '3', content: 'Wordpress integration for easy editing' },
+      { id: '4', content: 'Embedded Google Analytics' }
     ]
   },
   {
@@ -157,7 +158,8 @@ const projects = [
       application: ['Progressive Web App', 'Heroku'],
       markup: ['Styled Components', 'Responsive', 'Accessible', 'Flexbox'],
       tools: ['ESLint', 'Prettier', 'Git', 'Service Worker'],
-      api: ['Google Books API']
+      api: ['Google Books API'],
+      other: ['Node.JS', 'npm']
     },
     info: [
       { id: '1', content: 'Built with React JavaScript library' },
@@ -188,7 +190,8 @@ const projects = [
       validators: ['PropTypes'],
       tools: ['ESlint', 'Prettier', 'Git', 'Service Worker'],
       api: ['Foursquare API', 'Google Maps API'],
-      testing: ['Jest']
+      testing: ['Jest'],
+      other: ['Node.JS', 'npm']
     },
     info: [
       {
