@@ -2,20 +2,23 @@ import img1 from '../media/restaurant-app.png'
 import img1sm from '../media/restaurant-app_sm.png'
 import img2 from '../media/neighborhood-map.png'
 import img2sm from '../media/neighborhood-map_sm.png'
-import img3 from '../media/pixel-art-maker.png'
-import img3sm from '../media/pixel-art-maker_sm.png'
 import img4 from '../media/memory-game.png'
 import img4sm from '../media/memory-game_sm.png'
 import img5 from '../media/animal-trading-cards.png'
 import img5sm from '../media/animal-trading-cards_sm.png'
-import img6 from '../media/my-reads-app.png'
-import img6sm from '../media/my-reads-app_sm.png'
 import img7 from '../media/bloglist.png'
 import img7sm from '../media/bloglist_sm.png'
 import img8 from '../media/healthcare-website.png'
 import img8sm from '../media/healthcare-website_sm.png'
+
+/*
+import img3 from '../media/pixel-art-maker.png'
+import img3sm from '../media/pixel-art-maker_sm.png'
+import img6 from '../media/my-reads-app.png'
+import img6sm from '../media/my-reads-app_sm.png'
 import img9 from '../media/artist-website.png'
 import img9sm from '../media/artist-website_sm.png'
+*/
 
 /** ALL SKILLS
 skills: {
@@ -144,37 +147,6 @@ const projects = [
   },
   {
     id: '4',
-    image: img6,
-    thumbnail: img6sm,
-    imagetitle: 'My reads app preview',
-    title: 'My Reads',
-    description: 'Seach and select books',
-    demo: 'https://ninas-myreads-app.herokuapp.com/',
-    repo: 'https://github.com/NinaKWelch/ninas-myreads-app',
-    skills: {
-      languages: ['HTML5', 'CSS3', 'JavaScript ES6'],
-      frameworks: ['React'],
-      libraries: ['Redux'],
-      application: ['Progressive Web App', 'Heroku'],
-      markup: ['Styled Components', 'Responsive', 'Accessible', 'Flexbox'],
-      tools: ['ESLint', 'Prettier', 'Git', 'Service Worker'],
-      api: ['Google Books API'],
-      other: ['Node.JS', 'npm']
-    },
-    info: [
-      { id: '1', content: 'Built with React JavaScript library' },
-      { id: '2', content: 'Integration with third-party API' },
-      { id: '3', content: 'Search and sort functionality' },
-      { id: '4', content: 'Follows Accessibility guidelines' },
-      { id: '5', content: 'Follows Progressive Web App guidelines' },
-      {
-        id: '6',
-        content: `Current search terms are limited. Try  'Android', 'Artificial Intelligence', 'Business', 'Classics', 'Comics', 'Design', 'Development', Education', 'Finance', 'Travel', 'Web Development' or 'iOS'`
-      }
-    ]
-  },
-  {
-    id: '5',
     image: img2,
     thumbnail: img2sm,
     imagetitle: 'Neighborhood map preview',
@@ -211,7 +183,7 @@ const projects = [
     ]
   },
   {
-    id: '6',
+    id: '5',
     image: img5,
     thumbnail: img5sm,
     imagetitle: 'Animal trading cards preview',
@@ -239,7 +211,7 @@ const projects = [
     ]
   },
   {
-    id: '7',
+    id: '6',
     image: img4,
     thumbnail: img4sm,
     imagetitle: 'Memory game preview',
@@ -257,6 +229,37 @@ const projects = [
       { id: '1', content: 'Responsive design' },
       { id: '2', content: 'CSS animations with @keyframes' },
       { id: '3', content: 'DOM manipulation with vanilla javaScript' }
+    ]
+  } /* ,
+  {
+    id: '7',
+    image: img6,
+    thumbnail: img6sm,
+    imagetitle: 'My reads app preview',
+    title: 'My Reads',
+    description: 'Seach and select books',
+    demo: 'https://ninas-myreads-app.herokuapp.com/',
+    repo: 'https://github.com/NinaKWelch/ninas-myreads-app',
+    skills: {
+      languages: ['HTML5', 'CSS3', 'JavaScript ES6'],
+      frameworks: ['React'],
+      libraries: ['Redux'],
+      application: ['Progressive Web App', 'Heroku'],
+      markup: ['Styled Components', 'Responsive', 'Accessible', 'Flexbox'],
+      tools: ['ESLint', 'Prettier', 'Git', 'Service Worker'],
+      api: ['Google Books API'],
+      other: ['Node.JS', 'npm']
+    },
+    info: [
+      { id: '1', content: 'Built with React JavaScript library' },
+      { id: '2', content: 'Integration with third-party API' },
+      { id: '3', content: 'Search and sort functionality' },
+      { id: '4', content: 'Follows Accessibility guidelines' },
+      { id: '5', content: 'Follows Progressive Web App guidelines' },
+      {
+        id: '6',
+        content: `Current search terms are limited. Try  'Android', 'Artificial Intelligence', 'Business', 'Classics', 'Comics', 'Design', 'Development', Education', 'Finance', 'Travel', 'Web Development' or 'iOS'`
+      }
     ]
   },
   {
@@ -299,7 +302,7 @@ const projects = [
       { id: '2', content: 'Wordpress integration for easy editing' },
       { id: '3', content: 'Embedded Google Analytics' }
     ]
-  }
+  } */
 ]
 
 export default projects
