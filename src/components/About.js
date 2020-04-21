@@ -62,10 +62,10 @@ const About = () => {
           </Typography>
 
           <Typography variant="body1">
-            Having successfully completed a challenging but rewarding course in
-            full stack development (including database integration with
-            GraphQL), I have gained a better understanding of the development
-            process.
+            Having <a href="/certificates/1">successfully completed</a> a
+            challenging but rewarding course in full stack development
+            (including database integration with GraphQL), I have gained a
+            better understanding of the development process.
           </Typography>
         </Box>
         <Grid container justify="center">

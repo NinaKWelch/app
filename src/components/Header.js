@@ -13,6 +13,7 @@ import {
   LinkedIn as LinkedInIcon,
   GitHub as GitHubIcon
 } from '@material-ui/icons'
+import StackOverflowIcon from '../media/logos/stackoverflow.svg'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -31,6 +32,9 @@ const useStyles = makeStyles(theme => ({
     marginLeft: theme.spacing(2),
     border: '1px solid',
     borderColor: theme.palette.grey[300]
+  },
+  icon: {
+    width: 24
   },
   offset: theme.mixins.toolbar
 }))
@@ -53,6 +57,23 @@ const Header = () => {
             </Box>
           </Link>
           <Box>
+            <Tooltip title="StackOverflow">
+              <IconButton
+                component="a"
+                href="https://stackoverflow.com/users/story/13046403"
+                target="_blank"
+                rel="noopener"
+                aria-label="stackoverflow"
+                className={classes.social}
+                color="secondary"
+              >
+                <img
+                  src={StackOverflowIcon}
+                  alt="stackoverfow"
+                  className={classes.icon}
+                />
+              </IconButton>
+            </Tooltip>
             <Tooltip title="GitHub">
               <IconButton
                 component="a"
@@ -63,7 +84,7 @@ const Header = () => {
                 className={classes.social}
                 color="secondary"
               >
-                <GitHubIcon className={classes.icon} />
+                <GitHubIcon />
               </IconButton>
             </Tooltip>
             <Tooltip title="LinkedIn">
