@@ -60,7 +60,7 @@ const Header = () => {
             <Tooltip title="StackOverflow">
               <IconButton
                 component="a"
-                href="https://stackoverflow.com/users/story/13046403"
+                href="https://stackoverflow.com/users/story/13046403?view=Cv"
                 target="_blank"
                 rel="noopener"
                 aria-label="stackoverflow"
