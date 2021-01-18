@@ -90,7 +90,7 @@ const Header = () => {
             <Tooltip title="LinkedIn">
               <IconButton
                 component="a"
-                href="https://www.linkedin.com/in/nina-welch-50843137/"
+                href="https://www.linkedin.com/in/ninawelch/"
                 target="_blank"
                 rel="noopener"
                 aria-label="linkedin"

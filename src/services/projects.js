@@ -10,24 +10,25 @@ import img7 from '../media/bloglist.png'
 import img7sm from '../media/bloglist_sm.png'
 import img8 from '../media/healthcare-website.png'
 import img8sm from '../media/healthcare-website_sm.png'
-
+import img9 from '../media/would-you-rather.png'
+import img9sm from '../media/would-you-rather_sm.png'
 /*
 import img3 from '../media/pixel-art-maker.png'
 import img3sm from '../media/pixel-art-maker_sm.png'
 import img6 from '../media/my-reads-app.png'
 import img6sm from '../media/my-reads-app_sm.png'
-import img9 from '../media/artist-website.png'
-import img9sm from '../media/artist-website_sm.png'
+import img10 from '../media/artist-website.png'
+import img10sm from '../media/artist-website_sm.png'
 */
 
 /** ALL SKILLS
 skills: {
   languages: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript'],
   application: ['Wordpress', 'Progressive Web App', 'Android App', 'iOS App', 'Heroku'],
-  frameworks: ['React'],
+  frameworks: ['React', 'React Native'],
   libraries: ['Redux', 'jQuery', 'Lo-dash'],
   markup: ['Material UI', 'Bootstrap', 'Semantic UI', 'SCSS', 'Styled Components'],
-  tools: ['Webpack', 'Babel', 'ESLint', 'Prittify', 'Grunt', 'Gulp', 'Service Worker'],
+  tools: ['Webpack', 'Babel', 'ESLint', 'Prittify', 'Grunt', 'Gulp', 'Service Worker', 'Expo'],
   api: ['Google Maps API', 'FourSquare API' ]
   validators: [
     'Markup Validator',
@@ -43,6 +44,38 @@ skills: {
 */
 
 const projects = [
+  {
+    id: '9',
+    image: img9,
+    thumbnail: img9sm,
+    imagetitle: 'Would You Rather preview',
+    title: 'Would You Rather App',
+    description: 'Ask and answer questions',
+    demo: 'https://ninakwelch.github.io/reactnd-would-you-rather/',
+    repo: 'https://github.com/NinaKWelch/reactnd-would-you-rather',
+    skills: {
+      languages: ['HTML5', 'CSS3', 'JavaScript ES6'],
+      application: ['Progressive Web App'],
+      frameworks: ['React'],
+      libraries: ['Redux'],
+      markup: ['Bootstrap'],
+      validators: ['PropTypes'],
+      tools: ['Git', 'Prettier', 'ESLint']
+    },
+    info: [
+      {
+        id: '1',
+        content: 'Front-end project built with React library'
+      },
+      {
+        id: '2',
+        content: 'Mobile-first responsive design using Bootstrap Framework'
+      },
+      { id: '3', content: 'State management using Redux library' },
+      { id: '4', content: 'Follows Accessibility guidelines' },
+      { id: '5', content: 'Follows Progressive Web App guidelines' }
+    ]
+  },
   {
     id: '1',
     image: img7,
@@ -205,7 +238,7 @@ const projects = [
         content:
           'Creation and management of collaborative project with over 60 contributors'
       },
-      { id: '2', content: 'Responsive design using Bootstrap CSS Framework' },
+      { id: '2', content: 'Responsive design using Bootstrap Framework' },
       { id: '3', content: 'DOM events are handled using jQuery methods' },
       { id: '4', content: 'Follows Progressive Web App guidelines' }
     ]
