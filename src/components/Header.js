@@ -28,6 +28,14 @@ const useStyles = makeStyles(theme => ({
       color: theme.palette.primary.main
     }
   },
+  brandname: {
+    fontFamily: 'Montserrat',
+    fontWeight: 700,
+    fontSize: 18,
+    [theme.breakpoints.up('sm')]: {
+      fontSize: 22
+    }
+  },
   social: {
     marginLeft: theme.spacing(1),
     border: '1px solid',
@@ -47,12 +55,7 @@ const Header = () => {
       <AppBar color="default">
         <Toolbar className={classes.root}>
           <Link component={RouterLink} to="/" className={classes.brand}>
-            <Box
-              component="h1"
-              fontFamily="Montserrat"
-              fontWeight={700}
-              fontSize={22}
-            >
+            <Box component="h1" className={classes.brandname}>
               Nina Welch
             </Box>
           </Link>
