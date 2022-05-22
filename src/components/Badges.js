@@ -11,7 +11,7 @@ const Badges = () => {
       <Grid
         container
         spacing={2}
-        justify="center"
+        justifyContent="center"
         style={{ textAlign: 'center' }}
       >
         <Grid item xs={3} sm="auto">

@@ -59,8 +59,11 @@ const projects = [
       frameworks: ['React'],
       libraries: ['Redux'],
       markup: ['Bootstrap'],
+      tools: ['Git', 'Prettier', 'ESLint'],
+      api: [],
       validators: ['PropTypes'],
-      tools: ['Git', 'Prettier', 'ESLint']
+      testing: [],
+      other: []
     },
     info: [
       {
@@ -91,8 +94,9 @@ const projects = [
       frameworks: ['React'],
       libraries: ['Redux'],
       markup: ['Material UI'],
-      validators: ['PropTypes'],
       tools: ['Webpack', 'Babel', 'Git', 'ESLint'],
+      api: [],
+      validators: ['PropTypes'],
       testing: ['Jest', 'Cypress'],
       other: ['REST API', 'MongoDB', 'Express', 'Node.JS', 'npm']
     },
@@ -129,6 +133,8 @@ const projects = [
     skills: {
       languages: ['HTML5', 'CSS3', 'JavaScript ES6'],
       application: ['Progressive Web App'],
+      frameworks: [],
+      libraries: [],
       markup: ['Responsive', 'Accessible', 'Flexbox'],
       tools: ['Grunt', 'Git', 'Service Worker'],
       api: ['Google Maps API'],
@@ -139,6 +145,7 @@ const projects = [
         'HTML Beautifier',
         'JavaScript Beautifier'
       ],
+      testing: [],
       other: ['Node.JS', 'npm']
     },
     info: [
@@ -167,8 +174,14 @@ const projects = [
     repo: '',
     skills: {
       languages: ['HTML5', 'CSS3'],
-      markup: ['Responsive'],
       application: ['Wordpress'],
+      frameworks: [],
+      libraries: [],
+      markup: ['Responsive'],
+      tools: [],
+      api: [],
+      validators: [],
+      testing: [],
       other: ['SEO', 'Copywriting', 'Google Analytics']
     },
     info: [
@@ -189,12 +202,13 @@ const projects = [
     repo: 'https://github.com/NinaKWelch/ninas-neighborhood-map',
     skills: {
       languages: ['HTML5', 'CSS3', 'JavaScript ES6'],
-      frameworks: ['React'],
       application: ['Progressive Web App'],
+      frameworks: ['React'],
+      libraries: [],
       markup: ['Responsive', 'Accessible', 'Flexbox'],
-      validators: ['PropTypes'],
       tools: ['ESlint', 'Prettier', 'Git', 'Service Worker'],
       api: ['Foursquare API', 'Google Maps API'],
+      validators: ['PropTypes'],
       testing: ['Jest'],
       other: ['Node.JS', 'npm']
     },
@@ -227,10 +241,14 @@ const projects = [
     skills: {
       languages: ['HTML5', 'CSS3'],
       application: ['Progressive Web App'],
+      frameworks: [],
       libraries: ['jQuery'],
       markup: ['Bootstrap'],
       tools: ['Git', 'Service Worker'],
-      validators: ['Markup Validator', 'CSS Validator']
+      api: [],
+      validators: ['Markup Validator', 'CSS Validator'],
+      testing: [],
+      other: []
     },
     info: [
       {
@@ -254,9 +272,15 @@ const projects = [
     repo: 'https://github.com/NinaKWelch/ninas-memory-game',
     skills: {
       languages: ['HTML5', 'CSS3', 'JavaScript'],
+      application: [],
+      frameworks: [],
+      libraries: ['jQuery'],
       markup: ['Flexbox'],
       tools: ['Git'],
-      validators: ['Markup Validator', 'CSS Validator', 'Autoprefixer']
+      api: [],
+      validators: ['Markup Validator', 'CSS Validator', 'Autoprefixer'],
+      testing: [],
+      other: []
     },
     info: [
       { id: '1', content: 'Responsive design' },

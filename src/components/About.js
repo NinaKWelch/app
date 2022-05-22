@@ -68,7 +68,7 @@ const About = () => {
             better understanding of the development process.
           </Typography>
         </Box>
-        <Grid container justify="center">
+        <Grid container justifyContent="center">
           <Grid item>
             <Fab
               variant="extended"

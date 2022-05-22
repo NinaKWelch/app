@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
     }
   },
   social: {
-    marginLeft: theme.spacing(2),
+    marginLeft: theme.spacing(1),
     border: '1px solid',
     borderColor: theme.palette.grey[300]
   },
@@ -60,7 +60,7 @@ const Header = () => {
             <Tooltip title="StackOverflow">
               <IconButton
                 component="a"
-                href="https://stackoverflow.com/users/story/13046403?view=Cv"
+                href="https://stackoverflow.com/users/13046403/ninaw?tab=profile"
                 target="_blank"
                 rel="noopener"
                 aria-label="stackoverflow"

@@ -78,7 +78,7 @@ const Project = ({ project }) => {
             </Grid>
           </Hidden>
         </Grid>
-        <Grid container spacing={2} justify="flex-end">
+        <Grid container spacing={2} justifyContent="flex-end">
           {project.demo === '' ? (
             ''
           ) : (
@@ -131,8 +131,24 @@ Project.propTypes = {
     description: PropTypes.string,
     demo: PropTypes.string,
     repo: PropTypes.string,
-    skills: PropTypes.object,
-    info: PropTypes.array
+    skills: PropTypes.shape({
+      languages: PropTypes.arrayOf(PropTypes.string),
+      application: PropTypes.arrayOf(PropTypes.string),
+      frameworks: PropTypes.arrayOf(PropTypes.string),
+      libraries: PropTypes.arrayOf(PropTypes.string),
+      markup: PropTypes.arrayOf(PropTypes.string),
+      tools: PropTypes.arrayOf(PropTypes.string),
+      api: PropTypes.arrayOf(PropTypes.string),
+      validators: PropTypes.arrayOf(PropTypes.string),
+      testing: PropTypes.arrayOf(PropTypes.string),
+      other: PropTypes.arrayOf(PropTypes.string)
+    }),
+    info: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string,
+        constent: PropTypes.string
+      })
+    )
   }).isRequired
 }
 
