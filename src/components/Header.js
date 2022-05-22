@@ -31,7 +31,7 @@ const useStyles = makeStyles(theme => ({
   brandname: {
     fontFamily: 'Montserrat',
     fontWeight: 700,
-    fontSize: 18,
+    fontSize: 16,
     [theme.breakpoints.up('sm')]: {
       fontSize: 22
     }
