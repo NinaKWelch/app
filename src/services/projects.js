@@ -1,17 +1,23 @@
-import img1 from '../media/restaurant-app.png'
-import img1sm from '../media/restaurant-app_sm.png'
-import img2 from '../media/neighborhood-map.png'
-import img2sm from '../media/neighborhood-map_sm.png'
-import img4 from '../media/memory-game.png'
-import img4sm from '../media/memory-game_sm.png'
-import img5 from '../media/animal-trading-cards.png'
-import img5sm from '../media/animal-trading-cards_sm.png'
-import img7 from '../media/bloglist.png'
-import img7sm from '../media/bloglist_sm.png'
-import img8 from '../media/healthcare-website.png'
-import img8sm from '../media/healthcare-website_sm.png'
-import img9 from '../media/would-you-rather.png'
-import img9sm from '../media/would-you-rather_sm.png'
+import img1 from '../media/satoja.png'
+import img1sm from '../media/satoja_sm.png'
+import img2 from '../media/75_shots.png'
+import img2sm from '../media/75_shots_sm.png'
+import img3 from '../media/healthcare-website.png'
+import img3sm from '../media/healthcare-website_sm.png'
+import img4 from '../media/patientor.png'
+import img4sm from '../media/patientor_sm.png'
+import img5 from '../media/would-you-rather.png'
+import img5sm from '../media/would-you-rather_sm.png'
+import img6 from '../media/bloglist.png'
+import img6sm from '../media/bloglist_sm.png'
+import img7 from '../media/restaurant-app.png'
+import img7sm from '../media/restaurant-app_sm.png'
+import img8 from '../media/neighborhood-map.png'
+import img8sm from '../media/neighborhood-map_sm.png'
+import img9 from '../media/animal-trading-cards.png'
+import img9sm from '../media/animal-trading-cards_sm.png'
+import img10 from '../media/memory-game.png'
+import img10sm from '../media/memory-game_sm.png'
 /*
 import img3 from '../media/pixel-art-maker.png'
 import img3sm from '../media/pixel-art-maker_sm.png'
@@ -24,9 +30,9 @@ import img10sm from '../media/artist-website_sm.png'
 /** ALL SKILLS
 skills: {
   languages: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript'],
+  frameworks: ['React', 'React Native', 'GraphQL', 'Express'],
   application: ['Wordpress', 'Progressive Web App', 'Android App', 'iOS App', 'Heroku'],
-  frameworks: ['React', 'React Native'],
-  libraries: ['Redux', 'jQuery', 'Lo-dash'],
+  libraries: ['Redux', 'jQuery', Formik, ],
   markup: ['Material UI', 'Bootstrap', 'Semantic UI', 'SCSS', 'Styled Components'],
   tools: ['Webpack', 'Babel', 'ESLint', 'Prittify', 'Grunt', 'Gulp', 'Service Worker', 'Expo'],
   api: ['Google Maps API', 'FourSquare API' ]
@@ -39,15 +45,141 @@ skills: {
     'Lighthouse'
   ],
   testing: ['Jest', 'Jasmine', 'Cypress'],
-  other: ['mySQL', 'mongoDB', 'GraphQL', 'Express', 'NodeJS', 'Scrum', 'Kanban','Amazon AWS', 'Docker', 'Kubernetes' ]
+  other: ['mySQL', 'mongoDB', 'NodeJS', 'Scrum', 'Kanban','Amazon AWS', 'Docker', 'Kubernetes', 'Prerender.io', 'Git']
 }
 */
 
 const projects = [
   {
-    id: '9',
-    image: img9,
-    thumbnail: img9sm,
+    id: '1',
+    image: img1,
+    thumbnail: img1sm,
+    imagetitle: 'Satoja preview',
+    title: 'Satoja Website',
+    description: 'Online Marketplace',
+    demo: 'https://www.satoja.fi/',
+    repo: 'https://github.com/NinaKWelch/satoja/blob/main/README.md',
+    skills: {
+      languages: ['HTML5', 'CSS3', 'JavaScript ES6'],
+      frameworks: ['React', 'Express'],
+      application: ['Heroku'],
+      libraries: ['Redux', 'Formik', 'Yup'],
+      markup: ['Bootstrap', 'SCSS'],
+      tools: ['ESLint', 'Prettier'],
+      api: ['Cloudinary', 'Leaflet', 'Google Analytics'],
+      validators: [],
+      testing: [],
+      other: ['SEO', 'Prerender.io', 'Open Graph', 'NodeJS', 'Git']
+    },
+    info: [
+      { id: '1', content: 'Mobile-first responsive design' },
+      { id: '2', content: 'Search engine optimised content' },
+      {
+        id: '3',
+        content: 'Social sharing via Facebook, Twitter, WhatsApp etc.'
+      },
+      {
+        id: '4',
+        content: 'Complex forms with validation'
+      }
+    ]
+  },
+  {
+    id: '2',
+    image: img2,
+    thumbnail: img2sm,
+    imagetitle: '75 SHOTS preview',
+    title: '75 SHOTS Website',
+    description: 'Social Enterprise',
+    demo: 'https://75shots.com/',
+    repo: 'https://github.com/NinaKWelch/75shots',
+    skills: {
+      languages: ['HTML5', 'CSS3', 'JavaScript ES6'],
+      frameworks: ['React', 'GraphQL'],
+      application: ['AWS Amplify'],
+      libraries: ['Formik', 'Yup'],
+      markup: ['Bootstrap', 'SCSS'],
+      tools: ['ESLint', 'Prettier'],
+      api: [],
+      validators: [],
+      testing: [],
+      other: [
+        'Amazon Cognito',
+        'Amazon DynamoDB',
+        'Amazon S3',
+        'Amazon CloudFront (VOD)',
+        'Git'
+      ]
+    },
+    info: [
+      { id: '1', content: 'Mobile-first responsive design' },
+      {
+        id: '2',
+        content: 'Video uploading and playback with AWS live streaming solution'
+      },
+      { id: '3', content: 'Content management for administrators' }
+    ]
+  },
+  {
+    id: '3',
+    image: img3,
+    thumbnail: img3sm,
+    imagetitle: 'Yunji healthcare preview',
+    title: 'Healthcare Website',
+    description: 'Chinese medicine clinic',
+    demo: 'http://yunjihealthcare.co.uk/',
+    repo: '',
+    skills: {
+      languages: ['HTML5', 'CSS3'],
+      frameworks: [],
+      application: ['Wordpress'],
+      libraries: [],
+      markup: ['Responsive'],
+      tools: [],
+      api: ['Google Analytics'],
+      validators: [],
+      testing: [],
+      other: ['SEO', 'Copywriting']
+    },
+    info: [
+      { id: '1', content: 'Mobile-first responsive design' },
+      { id: '2', content: 'Search engine optimised content' },
+      { id: '3', content: 'Wordpress integration for easy editing' }
+    ]
+  },
+  {
+    id: '4',
+    image: img4,
+    thumbnail: img4sm,
+    imagetitle: 'Patientor preview',
+    title: 'Patientor Website',
+    description: 'Patient database',
+    demo: 'https://cryptic-harbor-34971.herokuapp.com/',
+    repo: 'https://github.com/NinaKWelch/ninas-patientor-client',
+    skills: {
+      languages: ['HTML5', 'CSS3', 'JavaScript ES6', 'TypeScript'],
+      frameworks: ['React', 'Express'],
+      application: ['Heroku'],
+      libraries: ['Formik', 'Yup'],
+      markup: ['Material UI', 'SCSS'],
+      tools: ['ESLint', 'Prettier'],
+      api: [],
+      validators: [],
+      testing: [],
+      other: ['NodeJS', 'Git']
+    },
+    info: [
+      {
+        id: '1',
+        content: 'Typescript integration on the client and server side'
+      },
+      { id: '2', content: 'Complex forms with validation' }
+    ]
+  },
+  {
+    id: '5',
+    image: img5,
+    thumbnail: img5sm,
     imagetitle: 'Would You Rather preview',
     title: 'Would You Rather App',
     description: 'Ask and answer questions',
@@ -55,15 +187,15 @@ const projects = [
     repo: 'https://github.com/NinaKWelch/reactnd-would-you-rather',
     skills: {
       languages: ['HTML5', 'CSS3', 'JavaScript ES6'],
-      application: ['Progressive Web App'],
       frameworks: ['React'],
+      application: ['Progressive Web App'],
       libraries: ['Redux'],
       markup: ['Bootstrap'],
       tools: ['Git', 'Prettier', 'ESLint'],
       api: [],
       validators: ['PropTypes'],
       testing: [],
-      other: []
+      other: ['Git']
     },
     info: [
       {
@@ -80,9 +212,9 @@ const projects = [
     ]
   },
   {
-    id: '1',
-    image: img7,
-    thumbnail: img7sm,
+    id: '6',
+    image: img6,
+    thumbnail: img6sm,
     imagetitle: 'Bloglist preview',
     title: 'Bloglist Web App',
     description: 'Share your favorite blogs',
@@ -90,15 +222,15 @@ const projects = [
     repo: 'https://github.com/NinaKWelch/ninas-bloglist',
     skills: {
       languages: ['HTML5', 'CSS3', 'JavaScript ES6', 'TypeScript'],
+      frameworks: ['React', 'Express'],
       application: ['Heroku'],
-      frameworks: ['React'],
       libraries: ['Redux'],
       markup: ['Material UI'],
       tools: ['Webpack', 'Babel', 'Git', 'ESLint'],
       api: [],
       validators: ['PropTypes'],
       testing: ['Jest', 'Cypress'],
-      other: ['REST API', 'MongoDB', 'Express', 'Node.JS', 'npm']
+      other: ['REST API', 'MongoDB', 'Node.JS', 'npm', 'Git']
     },
     info: [
       {
@@ -122,9 +254,9 @@ const projects = [
     ]
   },
   {
-    id: '2',
-    image: img1,
-    thumbnail: img1sm,
+    id: '7',
+    image: img7,
+    thumbnail: img7sm,
     imagetitle: 'Restaurant app preview',
     title: 'Restaurant Reviews',
     description: 'Search by location and cuisine',
@@ -132,8 +264,8 @@ const projects = [
     repo: 'https://github.com/NinaKWelch/ninas-restaurant-app',
     skills: {
       languages: ['HTML5', 'CSS3', 'JavaScript ES6'],
-      application: ['Progressive Web App'],
       frameworks: [],
+      application: ['Progressive Web App'],
       libraries: [],
       markup: ['Responsive', 'Accessible', 'Flexbox'],
       tools: ['Grunt', 'Git', 'Service Worker'],
@@ -164,37 +296,9 @@ const projects = [
     ]
   },
   {
-    id: '3',
+    id: '8',
     image: img8,
     thumbnail: img8sm,
-    imagetitle: 'Yunji healthcare preview',
-    title: 'Healthcare Website',
-    description: 'Chinese medicine clinic',
-    demo: 'http://yunjihealthcare.co.uk/',
-    repo: '',
-    skills: {
-      languages: ['HTML5', 'CSS3'],
-      application: ['Wordpress'],
-      frameworks: [],
-      libraries: [],
-      markup: ['Responsive'],
-      tools: [],
-      api: [],
-      validators: [],
-      testing: [],
-      other: ['SEO', 'Copywriting', 'Google Analytics']
-    },
-    info: [
-      { id: '1', content: 'Mobile-first responsive design' },
-      { id: '2', content: 'Search engine optimised content' },
-      { id: '3', content: 'Wordpress integration for easy editing' },
-      { id: '4', content: 'Embedded Google Analytics' }
-    ]
-  },
-  {
-    id: '4',
-    image: img2,
-    thumbnail: img2sm,
     imagetitle: 'Neighborhood map preview',
     title: 'Neighborhood Map',
     description: 'Search for things to do',
@@ -202,8 +306,8 @@ const projects = [
     repo: 'https://github.com/NinaKWelch/ninas-neighborhood-map',
     skills: {
       languages: ['HTML5', 'CSS3', 'JavaScript ES6'],
-      application: ['Progressive Web App'],
       frameworks: ['React'],
+      application: ['Progressive Web App'],
       libraries: [],
       markup: ['Responsive', 'Accessible', 'Flexbox'],
       tools: ['ESlint', 'Prettier', 'Git', 'Service Worker'],
@@ -230,9 +334,9 @@ const projects = [
     ]
   },
   {
-    id: '5',
-    image: img5,
-    thumbnail: img5sm,
+    id: '9',
+    image: img9,
+    thumbnail: img9sm,
     imagetitle: 'Animal trading cards preview',
     title: 'Animal Trading Cards',
     description: 'Collaborative design project',
@@ -240,8 +344,8 @@ const projects = [
     repo: 'https://github.com/NinaKWelch/trading-card-website',
     skills: {
       languages: ['HTML5', 'CSS3'],
-      application: ['Progressive Web App'],
       frameworks: [],
+      application: ['Progressive Web App'],
       libraries: ['jQuery'],
       markup: ['Bootstrap'],
       tools: ['Git', 'Service Worker'],
@@ -262,9 +366,9 @@ const projects = [
     ]
   },
   {
-    id: '6',
-    image: img4,
-    thumbnail: img4sm,
+    id: '10',
+    image: img10,
+    thumbnail: img10sm,
     imagetitle: 'Memory game preview',
     title: 'Memory Game',
     description: 'Football themed game',
@@ -272,8 +376,8 @@ const projects = [
     repo: 'https://github.com/NinaKWelch/ninas-memory-game',
     skills: {
       languages: ['HTML5', 'CSS3', 'JavaScript'],
-      application: [],
       frameworks: [],
+      application: [],
       libraries: ['jQuery'],
       markup: ['Flexbox'],
       tools: ['Git'],
