@@ -92,7 +92,7 @@ const projects = [
     title: '75 SHOTS Website',
     description: 'Social Enterprise',
     demo: 'https://75shots.com/',
-    repo: 'https://github.com/NinaKWelch/75shots',
+    repo: '',
     skills: {
       languages: ['HTML5', 'CSS3', 'JavaScript ES6'],
       frameworks: ['React', 'GraphQL'],
@@ -127,7 +127,7 @@ const projects = [
     imagetitle: 'Yunji healthcare preview',
     title: 'Healthcare Website',
     description: 'Chinese medicine clinic',
-    demo: 'http://yunjihealthcare.co.uk/',
+    demo: 'http://yunji.co.uk/',
     repo: '',
     skills: {
       languages: ['HTML5', 'CSS3'],
@@ -154,7 +154,7 @@ const projects = [
     imagetitle: 'Patientor preview',
     title: 'Patientor Website',
     description: 'Patient database',
-    demo: 'https://cryptic-harbor-34971.herokuapp.com/',
+    demo: 'https://rocky-beach-20269.herokuapp.com',
     repo: 'https://github.com/NinaKWelch/ninas-patientor-client',
     skills: {
       languages: ['HTML5', 'CSS3', 'JavaScript ES6', 'TypeScript'],
@@ -218,7 +218,7 @@ const projects = [
     imagetitle: 'Bloglist preview',
     title: 'Bloglist Web App',
     description: 'Share your favorite blogs',
-    demo: 'https://vast-wave-20661.herokuapp.com',
+    demo: 'https://ninas-bloglist.herokuapp.com',
     repo: 'https://github.com/NinaKWelch/ninas-bloglist',
     skills: {
       languages: ['HTML5', 'CSS3', 'JavaScript ES6', 'TypeScript'],
