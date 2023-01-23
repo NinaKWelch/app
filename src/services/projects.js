@@ -127,7 +127,7 @@ const projects = [
     imagetitle: 'Yunji healthcare preview',
     title: 'Healthcare Website',
     description: 'Chinese medicine clinic',
-    demo: 'http://yunji.co.uk/',
+    demo: 'http://yunji.co.uk',
     repo: '',
     skills: {
       languages: ['HTML5', 'CSS3'],
